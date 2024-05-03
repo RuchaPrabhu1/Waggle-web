@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="waggle.css"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="bg-white py-4 px-6">
+      <div class="container mx-auto flex justify-content-between items-center">
+        <div>
+          <img src="waggle logo-01.png" alt="Logo" class="h-7" />
+        </div>
+        <nav class="space-x-4">
+          <a href="#" class="text-gray-1000 hover:text-gray-600">Home</a>
+          <a href="#" class="text-gray-1000 hover:text-gray-600">About</a>
+          <a href="#" class="text-gray-1000 hover:text-gray-600">Services</a>
+          <a href="#" class="text-gray-1000 hover:text-gray-600">Blogs</a>
+          <a href="#" class="text-gray-1000 hover:text-gray-600">Profile</a>
+        </nav>
+      </div>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active style=height: 450px;">
+          <img
+            src="waggle carousal 1-01.png"
+            class="d-block w-100"
+            alt="Dog Illustration"
+          />
+        </div>
+        <div class="carousel-item style=height: 450px">
+          <img
+            src="waggle caraosal 2-01.png"
+            class="d-block w-100"
+            alt="Pet Parenting"
+          />
+        </div>
+        <div class="carousel-item style=height: 450px">
+          <img
+            src="waggle carousal 3-01.png"
+            class="d-block w-100"
+            alt="Pet Illustration"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div
+      class="prompt"
+      style="
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 500;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: bold;
+      "
+    >
+      <h4>Your Prompt for the day!</h4>
+      <div>
+        <img
+          src="prompt-01.png"
+          style="margin: auto; margin-top: 35px; width: 1000px"
+        />
+      </div>
+    </div>
+    <div
+      class="outercard bg-yellow-100"
+      style="height: 400px; margin-top: 40px"
+    >
+      <div
+        style="
+          text-align: center;
+          font-size: xx-large;
+          font-weight: 500;
+          padding: 20px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          font-style: bold;
+        "
+      >
+        <h3>What We Offer</h3>
+      </div>
+      <div
+        class="container grid grid-cols-2 md:grid-cols-6 gap-4 py-6"
+        style="justify-content: space-between"
+      >
+        <div class="bg-white rounded-lg shadow-md p-6" style="height: 260px">
+          <div>
+            <img
+              src="pet mating-01.png"
+              style="display: block; margin: -55px auto"
+            />
+          </div>
+          <h3
+            class="text-xl font-semibold mb-1"
+            style="text-align: center; padding-top: 15px"
+          >
+            Pet Mating
+          </h3>
+          <p style="text-align: center">
+            Unlock a world of companionship for your beloved pets, in your
+            neighborhood!
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6" style="height: 260px">
+          <div>
+            <img
+              src="grooming1.png"
+              style="display: block; margin: -15px auto"
+            />
+          </div>
+          <h3 class="text-xl font-semibold mb-1" style="text-align: center">
+            Pet Grooming
+          </h3>
+          <p style="text-align: center">
+            Pamper your furry friends with grooming services available near you
+            !
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6" style="height: 260px">
+          <div>
+            <img
+              src="pet training-01.png"
+              style="display: block; margin: -55px auto"
+            />
+          </div>
+          <h3
+            class="text-xl font-semibold mb-1"
+            style="text-align: center; padding-top: 15px"
+          >
+            Pet Training
+          </h3>
+          <p style="text-align: center">
+            Empower your furry friend's potential with tailored training
+            solutions!
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6" style="height: 260px">
+          <div>
+            <img
+              src="pet grooming1-01.png"
+              style="display: block; margin: -55px auto"
+            />
+          </div>
+          <h3
+            class="text-xl font-semibold mb-1"
+            style="text-align: center; padding-top: 15px"
+          >
+            Pet Boarding
+          </h3>
+          <p style="text-align: center">
+            Indulge your beloved pets with comfortable boarding options near
+            you!
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6" style="height: 260px">
+          <div>
+            <img
+              src="pet sitting-01.png"
+              style="display: block; margin: -55px auto"
+            />
+          </div>
+          <h3
+            class="text-xl font-semibold mb-1"
+            style="text-align: center; padding-top: 15px"
+          >
+            Pet Sitting
+          </h3>
+          <p style="text-align: center">
+            Elevate your pet's comfort with our trusted pet sitters, just around
+            the corner!
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6" style="height: 260px">
+          <div>
+            <img
+              src="chat with pet-01.png"
+              style="display: block; margin: -50px auto"
+            />
+          </div>
+          <h3
+            class="text-xl font-semibold mb-1"
+            style="text-align: center; padding-top: 15px"
+          >
+            Chat with a Vet
+          </h3>
+          <p style="text-align: center">
+            Chat with experienced vets for your pet's health needs!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="Blogs">
+      <div class="d-flex justify-content-between">
+        <div
+          style="
+            font-size: x-large;
+            font-weight: 500;
+            padding: 50px;
+            margin: left 80px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          <h3>Must Read Blogs</h3>
+        </div>
+        <div style="padding: 50px">
+          <button type="button" class="btn btn-outline-warning">
+            Read More
+          </button>
+        </div>
+      </div>
+      <div class="grid-container d-flex flex-wrap justify-content-center gap-4">
+        <div class="griditem card" style="width: 18rem">
+          <img
+            src="https://vetic.in/blog/wp-content/uploads/2022/07/Img-3-min.png"
+            class="card-img-top" style="height: 200px;"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Getting a Puppy: The Complete Guide for New Pet Parents
+            </h5>
+            <p class="card-text">
+              Do you think you are ready to become a pet parent? Then this
+              article is for you!
+            </p>
+            <a
+              href="https://vetic.in/blog/pet-parents/a-guide-for-new-pet-parents/"
+              class="card-link"
+              >Read full article</a
+            >
+          </div>
+        </div>
+        <div class="griditem card" style="width: 18rem">
+          <img
+            src="https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/pet-dental-care.jpg"
+            class="card-img-top object-fit-cover"
+            style="height: 200px;"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              How to take care of a pet: 7 essentials you must know
+            </h5>
+            <p class="card-text">
+              The importance of providing nutritious food, clean water, safe
+              housing, exercise, and stimulation.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/195914795/Sustainable-Jewellery-Publication-Design"
+              class="card-link"
+              >Read full article</a
+            >
+          </div>
+        </div>
+        <div class="griditem card" style="width: 18rem">
+          <img
+            src="https://www.transitionslifecare.org/wp-content/uploads/2020/05/AB1I9225-2048x1365.jpg"
+            class="card-img-top object-fit-cover"
+            style="height: 200px;"
+          />
+          <div class="card-body">
+            <h5 class="card-title">The Importance of Pets in Our Lives</h5>
+            <p class="card-text">
+              Did you know that it has been scientifically proven that stroking
+              an animal can greatly reduce your stress levels?
+            </p>
+            <a
+              href="https://www.behance.net/gallery/195914795/Sustainable-Jewellery-Publication-Design"
+              class="card-link"
+              >Read full article</a
+            >
+          </div>
+        </div>
+        <div class="griditem card" style="width: 18rem">
+          <img
+            src="https://thumbor.forbes.com/thumbor/fit-in/1290x/https://www.forbes.com/advisor/wp-content/uploads/2022/08/Pet_parent.jpg"
+            class="card-img-top object-fit-cover"
+            style="height: 200px;"
+          />
+          <div class="card-body">
+            <h5 class="card-title">25 Dog Care Tips For Pet Parents</h5>
+            <p class="card-text">
+              As a dog owner, you may adore your pooch as if it were your own
+              flesh and blood. And just like your children, you want to ensure
+              you provide the best care possible
+            </p>
+            <a
+              href="https://www.behance.net/gallery/195914795/Sustainable-Jewellery-Publication-Design"
+              class="card-link"
+              >Check out the whole project on Behance</a
+            >
+          </div>
+        </div>
+        <div class="griditem card" style="width: 18rem">
+          <img
+            src="https://thumbor.forbes.com/thumbor/fit-in/1290x/https://www.forbes.com/advisor/wp-content/uploads/2023/09/pet-insurace.jpg"
+            class="card-img-top object-fit-cover"
+            style="height: 200px;"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Why You Need Pet Insurance For A Puppy</h5>
+            <p class="card-text">
+              Puppies are adorable, but they can also be mini-terrors. As they
+              explore their new homes, they can manage to get into all kinds of
+              trouble.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/195914795/Sustainable-Jewellery-Publication-Design"
+              class="card-link"
+              >Read full article</a
+            >
+          </div>
+        </div>
+        <div class="griditem card" style="width: 18rem">
+          <img  src="https://assets-au-01.kc-usercontent.com/ab37095e-a9cb-025f-8a0d-c6d89400e446/58a35a58-4690-4402-aab7-9bd6e64b464b/article-what-should-feed-dog.jpg" class="card-img-top" style="height: 200px;" />
+          <div class="card-body">
+            <h5 class="card-title">Dog Nutrition: Guide to Dog Food Nutrients</h5>
+            <p class="card-text">
+              It is important to meet your dogs specific energy requirement to sustain their daily lifestyle.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/195914795/Sustainable-Jewellery-Publication-Design"
+              class="card-link"
+              >Read full article</a
+            >
+          </div>
+        </div>
+        <div class="griditem card" style="width: 18rem">
+          <img src="https://www.thesprucepets.com/thmb/pOx0aGfKXjpLQK0AwZEFC3ejvNk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/agility_t20_d1rvNo-90787a9ea41c4e50ad395e27d5da6de7.jpg"
+          class="card-img-top object-fit-cover"
+          style="height: 200px;" />
+          <div class="card-body">
+            <h5 class="card-title">Dog Training 101: How to Completely Train Your Dog</h5>
+            <p class="card-text">
+              Learn dog training basics for everything from crate training to fun tricks
+            </p>
+            <a
+              href="https://www.behance.net/gallery/195914795/Sustainable-Jewellery-Publication-Design"
+              class="card-link"
+              >Read full article</a
+            >
+          </div>
+        </div>
+        <div class="griditem card" style="width: 18rem">
+          <img src="https://www.thesprucepets.com/thmb/UzDoTwvYsqU9idru_fukbQn5ouA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how-to-care-for-puppies-1117475-hero-05219e04ec7a4a77a7f246bb5b6c40d4.jpg" 
+          class="card-img-top object-fit-cover" 
+          style="height: 200px;"/>
+          <div class="card-body">
+            <h5 class="card-title">Puppies 101: How to Care for a Puppy</h5>
+            <p class="card-text">
+              Puppies are definitely a lot of work, but they also bring plenty of joy to your world.
+            </p>
+            <a
+              href="https://www.thesprucepets.com/how-to-care-for-puppies-1117475"
+              class="card-link"
+              >Read full article</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: -20px;">
+<img src="waggle footer1-02.png">
+    </div>
+  </body>
+</html>
